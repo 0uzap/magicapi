@@ -19,6 +19,9 @@ class _AffichePageState extends State<AffichePage> {
     );
 
     contenu.children.add(Text(carte['cards'][0]['name'].toString()));
+    contenu.children.add(Text(carte['cards'][0]['type'].toString()));
+    contenu.children.add(Image.network(
+        'https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149934&type=card'));
 
     return contenu;
   }
